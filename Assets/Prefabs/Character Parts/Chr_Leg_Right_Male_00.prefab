@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &305664606929433195
+--- !u!1 &1802858707463681614
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6221429617375042885}
-  - component: {fileID: 2985642519416647201}
-  - component: {fileID: 7294854097905200945}
-  - component: {fileID: 3016854607717983988}
+  - component: {fileID: 6872918871327072943}
+  - component: {fileID: 2801420028430144504}
+  - component: {fileID: 1015210905763858823}
+  - component: {fileID: 94114530359013096}
   m_Layer: 0
-  m_Name: Chr_Head_No_Elements_Male_08
+  m_Name: Chr_Leg_Right_Male_00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6221429617375042885
+--- !u!4 &6872918871327072943
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 305664606929433195}
+  m_GameObject: {fileID: 1802858707463681614}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -34,13 +34,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!137 &2985642519416647201
+--- !u!137 &2801420028430144504
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 305664606929433195}
+  m_GameObject: {fileID: 1802858707463681614}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -79,49 +79,51 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4302078, guid: 038320a534bd8b444b43734860d1a211, type: 3}
+  m_Mesh: {fileID: 4300804, guid: 038320a534bd8b444b43734860d1a211, type: 3}
   m_Bones:
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 0}
   m_AABB:
-    m_Center: {x: -16.99987, y: -1.0908871, z: 0}
-    m_Extent: {x: 22.126793, y: 20.537373, z: 14.213288}
+    m_Center: {x: -27.95594, y: -2.9138603, z: -0.43432045}
+    m_Extent: {x: 24.98536, y: 25.267076, z: 9.586901}
   m_DirtyAABB: 0
---- !u!114 &7294854097905200945
+--- !u!114 &1015210905763858823
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 305664606929433195}
+  m_GameObject: {fileID: 1802858707463681614}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d922446a832d47eca3fed9b0cb97f566, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _skinnedMeshRenderer: {fileID: 2985642519416647201}
-  rootBone: Neck
+  _skinnedMeshRenderer: {fileID: 2801420028430144504}
+  rootBone: LowerLeg_R
   bones:
-  - Head
-  - Neck
---- !u!114 &3016854607717983988
+  - LowerLeg_R
+  - Ankle_R
+  - Ball_R
+  - Toes_R
+--- !u!114 &94114530359013096
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 305664606929433195}
+  m_GameObject: {fileID: 1802858707463681614}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ecbb5ee7f93549c48f74eb8450e4771a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skinnedMeshData: {fileID: 7294854097905200945}
+  skinnedMeshData: {fileID: 1015210905763858823}
   <Slots>k__BackingField:
-  - {fileID: 11400000, guid: 1436a2370d71d6b4d9b6508c0132f045, type: 2}
-  - {fileID: 11400000, guid: c5a5ead8eebc7a147a6fa03d27a919a9, type: 2}
-  - {fileID: 11400000, guid: 471d68c1d640338458a653f1cde92fff, type: 2}
+  - {fileID: 11400000, guid: 00ba6fae8d4eac54caf08fe1c5c920c4, type: 2}
   <Tags>k__BackingField:
   - {fileID: 11400000, guid: a657996896dc4354d833a59e1730b28c, type: 2}

@@ -29,18 +29,25 @@ namespace ModularCharacters.UI
         private List<EquipmentTag> _activeTags = new List<EquipmentTag>();
 
         private EquipmentSlot _activeSlot;
-    
+
+        public ModularCharacterPreset defaultPresetValues;
+
+        private Dictionary<EquipmentSlot, CharacterModule> _defaultValues;
+
         private OptionButtonUI GetNext() => pool.Count > 0 ? pool.Dequeue() : Instantiate(buttonPrefab);
 
-        private void Awake()
+        private void Start()
         {
-            if(ModularCharacter) Initialize(ModularCharacter);
+            if(ModularCharacter) 
+                Initialize(ModularCharacter);
         }
     
         [Button]
         public void Initialize(ModularCharacter modularCharacter)
         {
             ModularCharacter = modularCharacter;
+
+            InitializeDefaultValues();
 
             _allTags = new List<EquipmentTag>(CharacterModuleCollection.GetAllTags());
             _activeTags = new List<EquipmentTag>(_allTags.Count);
@@ -56,6 +63,24 @@ namespace ModularCharacters.UI
             ClearTagsButtons();
 
             InitializeSlots();
+
+            foreach (var pair in _defaultValues)
+                ModularCharacter.EquipPrefab(pair.Value);
+        }
+
+        private void InitializeDefaultValues()
+        {
+            _defaultValues = new Dictionary<EquipmentSlot, CharacterModule>();
+            foreach (var characterModule in defaultPresetValues.CharacterModules)
+            {
+                if (characterModule.Slots.Count != 1)
+                {
+                    Debug.LogWarning(
+                        $"Careful, the module {characterModule.Id} in {defaultPresetValues.name} is not valid for default values, it has {characterModule.Slots} slots assigned.");
+                    continue;
+                }
+                _defaultValues.Add(characterModule.Slots[0], characterModule);
+            }
         }
 
         private void ToggleTag(EquipmentTag equipmentTag, bool value)
@@ -96,7 +121,8 @@ namespace ModularCharacters.UI
             ClearElementButtons();
 
             var button = GetNext();
-            button.Initialize("None",()=> ModularCharacter.Unequip(slot));
+            button.Initialize("None", ()=> EquipDefault(slot) );
+            
             button.transform.SetParent(elementContainer);
             button.gameObject.SetActive(true);
             button.transform.localScale = Vector3.one;
@@ -128,7 +154,15 @@ namespace ModularCharacters.UI
                 elementButtons.Add(button);
             }
         }
-    
+
+        private void EquipDefault(EquipmentSlot slot)
+        {
+            if(_defaultValues.TryGetValue(slot, out var value))
+                ModularCharacter.EquipPrefab(value);
+            else
+                ModularCharacter.Unequip(slot);
+        }
+
         private void ClearElementButtons()
         {
             for (var index = elementButtons.Count - 1; index >= 0; index--)

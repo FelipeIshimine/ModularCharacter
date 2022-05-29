@@ -17,7 +17,7 @@ namespace ModularCharacters.UI
             Text.text = text;
             OnPressedCallback = callback;
             name = text;
-        }
+        }   
     
         public void Press() => OnPressedCallback?.Invoke();
     }

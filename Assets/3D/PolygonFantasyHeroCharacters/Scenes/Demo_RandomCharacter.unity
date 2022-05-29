@@ -1969,7 +1969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   renderersContainer: {fileID: 1917115244}
   hierarchyIndex: {fileID: 638896638}
-  defaultPreset: {fileID: 11400000, guid: 3335e5a6a61da9142b9598947068544f, type: 2}
+  defaultPreset: {fileID: 0}
 --- !u!1 &638896636 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100092, guid: af5ec7a734add7742be450d595a22f21,
@@ -4345,7 +4345,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5182423, y: 0}
   m_AnchorMax: {x: 0.8874649, y: 1}
-  m_AnchoredPosition: {x: -0.25079346, y: -0.005004883}
+  m_AnchoredPosition: {x: -0.2508545, y: -0.0048828125}
   m_SizeDelta: {x: 0.50171, y: -0.0098}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1545187174
@@ -10442,7 +10442,7 @@ PrefabInstance:
     - target: {fileID: 1404894426311526468, guid: 173c2009c89c4f94eb159608a1ce7d14,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000030517578
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5828520585738946317, guid: 173c2009c89c4f94eb159608a1ce7d14,
         type: 3}
@@ -10459,6 +10459,12 @@ PrefabInstance:
       propertyPath: ModularCharacter
       value: 
       objectReference: {fileID: 638896635}
+    - target: {fileID: 5828520585972999512, guid: 173c2009c89c4f94eb159608a1ce7d14,
+        type: 3}
+      propertyPath: defaultPresetValues
+      value: 
+      objectReference: {fileID: 11400000, guid: a7d40ee050e5b4f478a69502b5739cca,
+        type: 2}
     - target: {fileID: 5828520585972999513, guid: 173c2009c89c4f94eb159608a1ce7d14,
         type: 3}
       propertyPath: m_Pivot.x

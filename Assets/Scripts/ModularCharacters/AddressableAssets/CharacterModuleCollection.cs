@@ -27,7 +27,11 @@ namespace ModularCharacters.AddressableAssets
                 Add(characterModule);
         }
 
-        
+        private void OnEnable()
+        {
+            RefreshAll();
+        }
+
         [Button]
         public void RefreshAll()
         {

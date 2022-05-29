@@ -10,19 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e95b86f11b1f4d31aacb85ab50dfbc80, type: 3}
-  m_Name: Default Monk F
+  m_Name: Pj loco
   m_EditorClassIdentifier: 
   <CharacterModules>k__BackingField:
-  - {fileID: 3777314738884769996, guid: 3764021044b8f3b41a12902b58771e23, type: 3}
   - {fileID: 3575315922945371508, guid: 63390a927bf4a5c4b9686c329597cf1f, type: 3}
+  - {fileID: 9190722183396165594, guid: cadc04030b13deb4c82e7acca754d7c4, type: 3}
   - {fileID: 9198020795887650261, guid: 357b2438fc2f36f448eb9cf8230da39f, type: 3}
+  - {fileID: 7802089719957837862, guid: 0bd89578512a5f84799b7988c791e883, type: 3}
   - {fileID: 5378604678234607243, guid: 0be64aae1518b1643a869085abdc0aa6, type: 3}
-  - {fileID: 4073518979623962865, guid: 465b6d550dcdc6840ac1e86801e20504, type: 3}
   - {fileID: 494642647171815884, guid: 5b2df5c583b13394293b5cc9534af06e, type: 3}
   - {fileID: 6696300397590838537, guid: 4ca08752124794d4093268a6bbc95c5c, type: 3}
   - {fileID: 2001763316186485556, guid: 3530184000ac08b4189e3f3870c4fef4, type: 3}
-  - {fileID: 9190722183396165594, guid: cadc04030b13deb4c82e7acca754d7c4, type: 3}
-  - {fileID: 31070114200998866, guid: 2c45229ecbe59f64cb20b4cb9751b37a, type: 3}
-  - {fileID: 7639530396888528560, guid: 040bb116d78d4e748a05c6980de649c0, type: 3}
-  - {fileID: 7308014088865985394, guid: 3eb327bfc9cdefa47a89407c880fc60e, type: 3}
+  - {fileID: 168170317469514230, guid: 975d1a8e35cde6b47aa13c35caf9cad1, type: 3}
+  - {fileID: 1544616703863957265, guid: 6cb2833afb8c896448cedd15c53b0fce, type: 3}
+  - {fileID: 9182431860456030215, guid: bd8c703855e79a84385fb87f5c57ca40, type: 3}
+  - {fileID: 6332886696330505228, guid: 0c12d726720c1c842a1b74555a2196d9, type: 3}
+  - {fileID: 4277304871702419776, guid: bd9764e21c79b384697a21f98250a408, type: 3}
+  - {fileID: 2979951949623623806, guid: 6a70a05648175c84bbe2dc06f8c39152, type: 3}
+  - {fileID: 2415971038910190105, guid: fe6ad400acba503489e41b6621806bd8, type: 3}
   collection: {fileID: 11400000, guid: e6a0dd887aed2614ca70f5121151d54d, type: 2}
